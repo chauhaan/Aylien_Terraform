@@ -6,8 +6,8 @@
 
 Command to run the terraform script:
 
-1) terraform init
+terraform init
 
-2) terraform plan
+terraform plan
 
-3) terraform apply
+terraform apply
