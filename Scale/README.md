@@ -1,15 +1,13 @@
 # Prerequisite before running Terraform script:
 
-Provide the required input in variables.tf with the instance id of python application server.
+1) Provide the required input in variables.tf with the instance id of python application server.
 
-Provide the host address of server where you want to run the ansible playbook in the hosts file
+2) Provide the AWS provider details in provider.tf
 
-Command to run the playbook:
+Command to run the terraform script:
 
-[If using key based authentication]
+terraform init
 
-ansible-playbook -i hosts scale.yml -u "username" --private-key="private_key_path"
+terraform plan
 
-[If using password password authentication]
-
-ansible-playbook -i hosts scale.yml -u "username" -k
+terraform apply
